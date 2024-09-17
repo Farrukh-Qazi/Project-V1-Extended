@@ -1,0 +1,112 @@
+
+nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+    background-color: whitesmoke;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+a:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+   transition: 200ms;
+  }
+  @media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+.tile-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tile styles */
+.tile {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+/* Individual tile colors */
+.diamond {
+    background-color: #b9f2ff; /* Diamond color */
+}
+
+.gold {
+    background-color: #ffd700; /* Gold color */
+}
+
+.silver {
+    background-color: #c0c0c0; /* Silver color */
+}
+
+/* Zoom scale on hover */
+.diamond:hover {
+    transform: scale(1.1); /* Slight zoom */
+}
+
+.gold:hover {
+    transform: scale(1.05); /* Medium zoom */
+}
+
+.silver:hover {
+    transform: scale(1.02); /* Small zoom */
+}
+#about{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+#text{
+    margin-top: 100px;
+    font-size: 4rem;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 900;
+}
